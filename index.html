@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" type="" href="">
+    <link rel="icon" type="circle" href="">
+    <link rel="stylesheet" href="styles.css">
+    <!-- para unir el css uso el formato link de arriba y en href pongo el nombre del archivo.css -->
 </head>
 <body>
     <header>
@@ -14,10 +16,10 @@
 
     <main>
         <!-- Contenido que quiero mostrar -->
-        <h1> titulo </h1>
+        <h1 class="titular"> titulo </h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis labore earum doloremque modi consequatur magni fugiat doloribus repellendus. Repellendus vitae debitis perspiciatis harum facere delectus tempore mollitia dolorum consequuntur suscipit.
 
-        <h3> heading 3 </h3>
+        <h3 id="titular3"> heading 3 </h3>
         <img src="https://via.placeholder.com/200" alt="Imagen no encontrada">
         <!-- con el placeholder ocupo el espacio de donde iria la fto -->
         <!-- con el ./ me salen las opciones para poner el source de mi imagen -->
@@ -26,7 +28,8 @@
 
         <!-- div es en bloque (ocupa todo el renglon) y span es en inline (ocupa una parte del renglon) -->
 
-        <input type="text" placeholder="escriba algo">
+        <br>
+        <h6> Mail: <input type="text" placeholder="escriba algo"> </h6>
         <input type="button" value="Enviar">
         <li type="square">hola</li>
         <li type="circle">Hola</li>
@@ -34,11 +37,21 @@
 
         <b>hola</b>
         <em>hola</em>
-
     </main>
 
     <footer>
         <!-- contacto, mapa del sitio -->
+        <!-- POSICIONES:
+        Static -- va a caer donde haya lugar
+        Relative -- desde donde deberias estar pero movida a donde yo te digo (no se usa tanto porque vos ves tu caja en el lugar donde la pusiste pero para los demas objetos sigue estando donde orginalmente estaba)
+        Fixed -- queda en el mismo lugar incluso si bajas la pantalla
+        Absolut -- es como el relativo pero saca el hueco y lo pone donde yo quiero (no solo de vista)
+        Sticky -- se pega al borde cuando toy scrolleando (hay que ponerlo en el body para que funcione)
+
+        posicionamientos pueden ser relativos o absolutos - px ; vw ; % ;
+        
+        cajas -- tienen margen borde padding y contenido
+        -->
     </footer>
 </body>
 </html>
