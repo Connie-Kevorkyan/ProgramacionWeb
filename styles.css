@@ -1,34 +1,81 @@
-/* ESTRUCTURA GENERAL DE CSS: etiqueta {propiedad: valor;} */
+* {
+    font-family: Verdana;
+    background-color: transparent;
+}
 
-/* llamar a toda la pagina */
-* {font-family: Verdana;}
+button {
+    box-sizing: border-box;
+    border: 0;
+    text-align: center;
+    height: 100%;
+    border-radius: 25px;
+    position: relative;
+}
 
-/* llamar a la etiqueta directo */
-body {background-color: lightpink;}
+.fotos {
+    margin-left: 50px;
+}
 
-/* llamar a una clase directo */
+.footer {
+    display: inline-block;
+}
+
+.redondo {
+    border-radius: 150px;
+    height: 170px;
+    width: 170px;
+    background-color: deeppink;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 75px;
+    text-align: center;
+}
+
+.info {
+    border-radius: 20px;
+    background-color: #DC1CDC;
+    padding: 20px;
+    width: 300px;
+    height: 50px;
+    display: inline-block;
+    margin: 30px;
+}
+
+#buscar {
+    border: 2px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    width: 380px;
+    height: 35px;
+    padding: 10px
+}
+
+main {
+    margin-top: 150px
+}
+#carrito {
+    background-color: #DC1CDC;
+    padding: 25px;
+    border-radius: 0;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    background: none;
+}
+
+.topnav {
+    position: fixed;
+    top: 35px;
+    left: 190px;
+    word-spacing: 35px;
+    background-color: transparent;
+}
 .titular {
     color: #DC1CDC ;
     font-size: 50px;
+    position: sticky;
+    top: 0
 }
-
-/* llamar a un id directo */
-#titular3 {color: aqua;}
-
-/*
-los colores en hexadecimal
-0 1 2 3 4 5 6 7 8 9 a b c d e f
-red green blue (RGB)
-
-# rojo verde azul (2 numeros para cada color)
-
-ejemplo:
-#000000 -- negro
-#ff0000 -- el rojo + rojo
-#ffffff -- blanco
-#00ff00 -- verde
-
-o tmb puedo hacer:
-rgb (265, 0, 0)
-
-*/

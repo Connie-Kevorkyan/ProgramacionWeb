@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Homepage </title>
     <link rel="icon" type="circle" href="">
     <link rel="stylesheet" href="styles.css">
     <!-- para unir el css uso el formato link de arriba y en href pongo el nombre del archivo.css -->
@@ -12,6 +12,27 @@
 <body>
     <header>
         <!-- Menu de navegación y logo -->
+        <div class="header">
+            <div class="logo">
+                <img src="https://via.placeholder.com/130x130" alt="Imagen no encontrada" style="border-radius:100px">
+            </div>
+    
+            <div class="topnav">
+                <button type="button">
+                    <img src="Imagenes/menu-hamburguesa.png" width="20px" height="20px"> CATEGORIAS
+                </button>
+    
+                <input type="text" placeholder="Buscar..." id="buscar"> <img src="Imagenes/busqueda.png" width="20px" height="20px">
+                
+                <button type="button">
+                    <img src="Imagenes/usuario.png" width="20px" height="20px"> MI CUENTA
+                </button>
+                
+                <button type="button" id="carrito">
+                    <img src="Imagenes/carrito-de-compras.png" width="20px" height="20px"> MI CARRITO <img src="Imagenes/angulo-pequeno-hacia-abajo.png" width="20px" height="20px">
+                </button>
+            </div>    
+        </div>
     </header>
 
     <main>
@@ -20,11 +41,44 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis labore earum doloremque modi consequatur magni fugiat doloribus repellendus. Repellendus vitae debitis perspiciatis harum facere delectus tempore mollitia dolorum consequuntur suscipit.
 
         <h3 id="titular3"> heading 3 </h3>
-        <img src="https://via.placeholder.com/200" alt="Imagen no encontrada">
+        <span class="fotos">
+            <img src="https://via.placeholder.com/370x150" alt="Imagen no encontrada">
+            <img src="https://via.placeholder.com/370x150" alt="Imagen no encontrada">
+            <img src="https://via.placeholder.com/370x150" alt="Imagen no encontrada">
+        </span>
+
+        <div class="info">
+            Entregas
+        </div>
+
+        <div class="info">
+            Descuentos
+        </div>
+
+        <div class="info">
+            Ofertas
+        </div>
+
+        <div class="redondo">
+            Entregas
+        </div>
+
+        <div class="redondo">
+            Descuentos
+        </div>
+
+        <div class="redondo">
+            Ofertas
+        </div>
+
+        <div class="redondo">
+            Ofertas
+        </div>
         <!-- con el placeholder ocupo el espacio de donde iria la fto -->
         <!-- con el ./ me salen las opciones para poner el source de mi imagen -->
 
-        <a href="https://www.google.com" target="_blank"> Link a google </a>
+        <br>
+        <a href="https://www.jumbo.com.ar/?gclid=CjwKCAjw3qGYBhBSEiwAcnTRLhf1RqNzYyJkqBEQML9VqNaQBn8rCZx9SPcVBc34K9kUfIlEvqevkxoCUa4QAvD_BwE" target="_blank"> Jumbo </a>
 
         <!-- div es en bloque (ocupa todo el renglon) y span es en inline (ocupa una parte del renglon) -->
 
@@ -37,21 +91,28 @@
 
         <b>hola</b>
         <em>hola</em>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea id, totam nemo tempora earum omnis repudiandae molestias quisquam ducimus suscipit, sequi molestiae impedit provident vero quasi quis quidem eligendi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea id, totam nemo tempora earum omnis repudiandae molestias quisquam ducimus suscipit, sequi molestiae impedit provident vero quasi quis quidem eligendi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea id, totam nemo tempora earum omnis repudiandae molestias quisquam ducimus suscipit, sequi molestiae impedit provident vero quasi quis quidem eligendi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea id, totam nemo tempora earum omnis repudiandae molestias quisquam ducimus suscipit, sequi molestiae impedit provident vero quasi quis quidem eligendi?</p>
+
     </main>
 
     <footer>
         <!-- contacto, mapa del sitio -->
-        <!-- POSICIONES:
-        Static -- va a caer donde haya lugar
-        Relative -- desde donde deberias estar pero movida a donde yo te digo (no se usa tanto porque vos ves tu caja en el lugar donde la pusiste pero para los demas objetos sigue estando donde orginalmente estaba)
-        Fixed -- queda en el mismo lugar incluso si bajas la pantalla
-        Absolut -- es como el relativo pero saca el hueco y lo pone donde yo quiero (no solo de vista)
-        Sticky -- se pega al borde cuando toy scrolleando (hay que ponerlo en el body para que funcione)
-
-        posicionamientos pueden ser relativos o absolutos - px ; vw ; % ;
-        
-        cajas -- tienen margen borde padding y contenido
-        -->
+        <span class="footer">
+            <h4> SEGUINOS </h4>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="Imagenes/instagram.png" width="25px" height="25px">
+            </a>
+            <img src="Imagenes/sobre.png" width="25px" height="25px">
+            <img src="Imagenes/whatsapp.png" width="25px" height="25px">
+            <img src="Imagenes/twitter.png" width="25px" height="25px">
+        </span>
     </footer>
 </body>
 </html>
