@@ -1,0 +1,44 @@
+img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+div {
+    margin: auto;
+    width: 20%;
+    padding: 2vh;
+    text-align: center;
+}
+body {
+    padding: 2vh 0;
+}
+button {
+    width: 15vw;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;
+}
+input {
+    width: 15vw;
+    border-radius: 5px;
+    border: 1;
+    padding: 10px;
+}
+
+/* RESPONSIVE PARA CELULARES */
+@media screen and (max-width: 415px) {
+    img {width: 80%}
+    div {width: 80%}
+    button {width: 60vw}
+    input {width: 60vw}
+}
+
+/* RESPONSIVE PARA TABLETS */
+@media screen and (max-width: 820px) {
+    img {width: 70%}
+    div {width: 70%}
+    button {width: 60vw}
+    input {width: 60vw}
+}
