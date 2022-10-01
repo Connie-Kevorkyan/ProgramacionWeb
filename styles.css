@@ -80,6 +80,11 @@ footer {
     display: flex;
 }
 
+.btn-info {
+    background-color: #E0BAFF;
+    border: #E0BAFF;
+}
+
 /* RESPONSIVE A TABLETS */
 @media screen and (max-width: 600px) {
     .navbar > ul > li > .texto {

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Carlos Ruiz Zafón </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Imagenes/CRZ.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +34,62 @@
     </header>
 
     <main> <!-- Contenido que quiero mostrar -->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="Imagenes/la sombra del viento.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"> La Sombra del Viento </h5>
+                <p class="card-text"> Carlos Ruiz Zafón </p>
+                <p class="card-text"> $2500 </p>
+                <button type="button" class="btn btn-light" class="card-text"> <img src="Imagenes/heart.svg"> </button>
+                <button type="button" class="btn btn-info" class="card-text"> <a href="comprar.html"> Comprar </a> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="Imagenes/la sombra del viento.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title"> La Sombra del Viento </h4>
+                <h5 class="card-text"> Carlos Ruiz Zafón </h5>
+                <p class="card-text"> Editorial: Planeta </p>
+                <p class="card-text"> $2500 </p>
+                <button type="button" class="btn btn-dark" class="card-text"> Ver más detalles </button> <br>
+                <button type="button" class="btn btn-light" class="card-text"> <img src="Imagenes/heart.svg"> </button>
+
+
+                <button class="btn btn-primary" class="card-text" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Agregar al carrito </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    ...
+                  </div>
+                </div>
+
+
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
         <div>
           <input type="search" placeholder="Buscar...">
         </div>
@@ -43,12 +102,47 @@
         <div class="banner">
           <img src="Imagenes/geo-alt.svg"> Encontra tu tienda más cercana
         </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi deserunt exercitationem quasi autem, laboriosam illum temporibus voluptatibus doloremque. Saepe est omnis earum. Amet, reprehenderit dolorem. Quidem voluptatum repellendus eius.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor natus sunt tempore aspernatur dignissimos hic possimus delectus? Sint, doloribus, tempora ipsum alias omnis asperiores aspernatur maxime eius laborum beatae deleniti?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam consequatur, perferendis iste minima incidunt dolorem recusandae aperiam officiis eius enim consequuntur laboriosam ab tempora eligendi voluptates sequi impedit dolorum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit necessitatibus nemo amet cum minus, voluptates vitae asperiores maxime officia quam? Aspernatur distinctio, neque eveniet accusantium vero deleniti reprehenderit repellat asperiores.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos sunt ex ea? Dicta, magni odio. Fuga, repudiandae omnis at laboriosam rem id, laudantium soluta optio voluptas illo vel consectetur?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.fsefesesfesfsefsfesfesfesgs
+
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a short card.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="banner">
           <img src="Imagenes/geo-alt.svg"> Obtene beneficios exclusivos para clientes
         </div>
