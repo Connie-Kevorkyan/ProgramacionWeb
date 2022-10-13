@@ -10,9 +10,15 @@
 </head>
 <body>
     <img src="Imagenes/CRZ.png">
-    <div> <input type="text" placeholder="Usuario"> </div>
-    <div> <input type="password" placeholder="Contraseña"> </div>
-    <div> <button type="submit"> <a href="index.html"> INICIAR SESION </a> </button> </div>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Usuario">
+    </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+      </div>
+    <div>
+        <a href="index.html"> <input class="btn btn-primary" type="submit" value="Submit"> </a>
+    </div>
     <div> ¿Ha olvidado su contraseña? </div>
 </body>
 </html>
