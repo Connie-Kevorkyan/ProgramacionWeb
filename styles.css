@@ -1,21 +1,26 @@
-body {
-    margin: 0;
+a {
+    /*text-decoration: none;*/
+    color:black
 }
 
-.btn-info {
-    background-color: #E0BAFF;
-    border: #E0BAFF;
+.letravioleta {
+    color: #c09af5!important;
 }
 
-.card-footer {
-    background-color: white;
+.fondovioleta {
+    background-color: #c09af5;
 }
 
-.header {
-    margin: 0;
+.btn-primary {
+    background-color: #c09af5;
+    border: #c09af5;
+    --bs-btn-hover-bg:#d5bcf7;
+    --bs-btn-hover-border-color:#d5bcf7;
+    --bs-btn-active-bg: #d5bcf7;
+    --bs-btn-active-border-color: white;
 }
 
-/* CSS PARA PÁGINA DE LOG IN */
+/* PARA PÁGINA DE LOG IN */
 #bodylogin {
     height: 100%;
     display: flex;
@@ -44,12 +49,11 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-/* TERMINA CSS PARA PÁGINA DE LOG IN */
 
-/* CSS PARA PÁGINA DE COMPRAR */
-@media screen and (min-width: 768px) {
-    #resumenpedido {
-        overflow-y: auto;
-        max-height: 260px;
-    }
+/* PARA BOTON DE FINALIZAR COMPRA EN OFF CANVAS */
+.fincompra {
+    position: absolute;
+    bottom: 8px;
+    width: 92%!important;
+    align-self: center;
 }
