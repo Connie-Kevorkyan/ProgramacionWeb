@@ -224,20 +224,21 @@ function renderizarCarritoItemNuevo () {
 
  function mostrarCarrito () {
     console.log("ENTRE A MOSTRAR CARRITO")
+    botonFinalizar.textContent = '';
     carrito = JSON.parse(sessionStorage.getItem("carrito"));
     console.log(carrito)
     let miCarrito = carrito
     console.log(miCarrito)
 
     miCarrito.forEach((itemCantidad) => {
-        let miItem = DATOSPRODUCTOS.find((itemDATOSPRODUCTOS) => itemDATOSPRODUCTOS.id === parseInt(itemCantidad.itemId))
-        console.log(miItem)
+        let miItemCantidad = DATOSPRODUCTOS.find((itemDATOSPRODUCTOS) => itemDATOSPRODUCTOS.id === parseInt(itemCantidad.itemId))
+        console.log(miItemCantidad)
         
         const minodo = document.createElement('a');
         minodo.classList.add('list-group-item', 'list-group-item-action', 'd-flex', 'gap-3', 'py-3');
         
         const minodofoto = document.createElement('img');
-        minodofoto.setAttribute ('src', miItem.foto);
+        minodofoto.setAttribute ('src', miItemCantidad.foto);
         minodofoto.style.height = '55px';
         minodofoto.style.width = '37px';
 
@@ -249,14 +250,14 @@ function renderizarCarritoItemNuevo () {
         
         const minodotitulo = document.createElement('h6');
         minodotitulo.classList.add('mb-0', 'text-nowrap');
-        minodotitulo.textContent = miItem.nombre;
+        minodotitulo.textContent = miItemCantidad.nombre;
 
         const minodocantidad = document.createElement('p');
         minodocantidad.textContent = itemCantidad.cantidad;
         
         const minodoprecio = document.createElement('p');
         minodoprecio.classList.add ('text-nowrap');
-        minodoprecio.textContent = `$${miItem.precio}`;
+        minodoprecio.textContent = `$${miItemCantidad.precio}`;
 
         minodo.appendChild(minodofoto);
         minodo.appendChild(minodoinfo);
@@ -285,7 +286,7 @@ function borrarItemCarrito (evento) {
     carrito = carrito.filter((carritoId) => {
         return carritoId !== id;
     })
-    renderizarCarrito ();
+    renderizarCarritoItemNuevo ();
 }
 
 function calcularTotal () {
