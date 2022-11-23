@@ -74,7 +74,11 @@ export function renderizarProductos() {
 
 // Funcion para agregar productos al carrito
 function agregarAlCarrito (evento) {
+    if(JSON.parse(sessionStorage.getItem("carrito"))){
         carritoStorage = JSON.parse(sessionStorage.getItem("carrito"));
+    }else{
+        carrito = []
+    }
     
     if (carritoStorage != null) { //Chequeo si esta vacio
         carrito = carritoStorage //Si no esta vacio, lo guardo
