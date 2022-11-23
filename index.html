@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Finalizar compra </title>
-
-    <link rel="icon" href="Imagenes/CRZ.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Inicio </title>
+        
+        <link rel="icon" href="Imagenes/CRZ.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -22,24 +23,20 @@
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li> <a href="#" class="nav-link px-2 link-secondary"> Inicio </a> </li>
-                <li> <a href="#productos" class="nav-link px-2 link-dark"> Productos </a> </li>
-                <li> <a href="#trayectoria" class="nav-link px-2 link-dark"> Trayectoria </a> </li>
+                <li> <a href="#libros" class="nav-link px-2 link-dark"> Productos </a> </li>
             </ul>
     
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
             </form>
-    
+
             <div class="dropdown text-end">
                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="Imagenes/carlos ruiz zafon.jpg" alt="..." width="32" height="32" class="rounded-circle">
+                    <img src="Imagenes/carlos ruiz zafon.jpg" alt="Carlos Ruiz Zafón" width="32" height="32" class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu text-small">
-                    <li> <a class="dropdown-item" href="#"> Favoritos </a> </li>
-                    <li> <a class="dropdown-item" href="#"> Carrito </a> </li>
-                    <li> <a class="dropdown-item" href="#"> Mi perfil </a> </li>
-                    <li> <hr class="dropdown-divider"> </li>
-                    <li> <a class="dropdown-item" href="#"> Cerrar Sesión </a> </li>
+                    <li> <a class="dropdown-item" href="#"> </a> </li>
+                    <li> <a class="dropdown-item" href=""> </a> </li>
                 </ul>
             </div>
         </div>
@@ -95,249 +92,31 @@
     </div>
 
     <!-- Sobre Carlos Ruiz Zafón -->
-    <div class="p-4 mb-3 bg-light rounded" id="trayectoria">
+    <div class="p-4 mb-3 bg-light rounded">
         <h4 class="fst-italic"> Carlos Ruiz Zafón </h4>
         <p class="mb-0"> Sus obras han sido traducidas a más de cincuenta idiomas. En 1993 se da a conocer con El Principe de la Niebla, que forma, con El Palacio de la Medianoche y Las Luces de Septiembre, la Trilogía de la Niebla. En 1998 llega Marina. En 2001 publica La Sombra del Viento, la primera novela de la saga de El Cementerio de los Libros Olvidados, que incluye El Juego del Ángel, El Prisionero del Cielo y El Laberinto de los Espíritus, un universo literario que se ha convertido en uno de los grandes fenómenos de las letras contemporáneas en los cinco continentes. </p>
     </div>
+    
 
     <div class="row g-5">
-        <!-- Columna con filtros -->
+        <!-- Columna con filtros y ordenamientos -->
         <div class="col-md-4">
             <div class="position-sticky" style="top: 5.5rem">
-                <div class="p-4 mb-3 bg-light rounded">
-                    <h4 class="fst-italic"> Algo </h4>
-                    <p class="mb-0"> algo </p>
+                <div class="p-4" id="compras">
                 </div>
                 <div class="p-4">
-                    <h4 class="fst-italic"> Filtros </h4>
-                    algo algo
+                    <h4 class="fst-italic" id="subtotalcompra"> </h4>
                 </div>
                 <div class="p-4">
-                    <h4 class="fst-italic"> Elsewhere </h4>
-                    <ol class="list-unstyled">
-                        <li> <a href="#"> GitHub </a> </li>
-                        <li> <a href="#"> Twitter </a> </li>
-                        <li> <a href="#"> Facebook </a> </li>
-                    </ol>
+                    <a href="#">
+                    <button type="button" class="btn btn-primary w-100 fincompra" id="fincompra" onclick="mostrarCarrito()"> Finalizar compra </button> </a>  
                 </div>
             </div>
         </div>
+        
 
-        <!-- Columna con los libros separados por colecciones -->
-        <div class="col-md-8" id="productos">
-            <!-- Banner colección Cementerio de los Libros Olvidados -->
-            <div class="col-md-12 pb-4">
-                <div class="h-100 p-5 bg-light border rounded-3">
-                    <h2> Cementerio de los Libros Olvidados </h2>
-                    <p> Un ciclo de novelas que se entrecruzan en el universo literario del Cementerio de los Libros Olvidados. Las novelas que forman este ciclo están unidas entre sí a través de personajes e hilos argumentales que tienden puentes narrativos y temáticos, aunque cada una de ellas ofrece una historia cerrada, independiente y contenida en sí misma. Las diversas entregas de la serie pueden leerse en cualquier orden o por separado, permitiendo al lector explorar y acceder al laberinto de historias a través de diferentes puertas y caminos que, anudados, le conducirán al corazón de la narración. </p>
-                </div>
-            </div>
-
-            <!-- Card La Sombra del Viento -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/la sombra del viento.jpg" class="img-fluid rounded-start" alt="Tapa del libro La Sombra del Viento">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> La Sombra del Viento </h5>
-                            <p class="card-text"> Un amanecer de 1945, un muchacho es conducido por su padre a un misterioso lugar oculto en el corazón de la ciudad vieja: El Cementerio de los Libros Olvidados. Allí, Daniel Sempere encuentra un libro maldito que cambia el rumbo de su vida y lo arrastra a un laberinto de intrigas y secretos enterrados en el alma oscura de la ciudad. </p>
-                            <p class="card-text"> <small> 576 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card El Juego del Ángel -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/el juego del angel.jpg" class="img-fluid rounded-start" alt="Tapa del libro El Juego del Ángel">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> El Juego del Ángel </h5>
-                            <p class="card-text"> En la turbulenta Barcelona de los años 20 un joven escritor obsesionado con un amor imposible recibe la oferta de un misterioso editor para escribir un libro como no ha existido nunca, a cambio de una fortuna y, tal vez, mucho más. </p>
-                            <p class="card-text"> <small> 667 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card El Prisionero del Cielo -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/el prisionero del cielo.jpg" class="img-fluid rounded-start" alt="Tapa del libro El Prisionero del Cielo">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> El Prisionero del Cielo </h5>
-                            <p class="card-text"> Daniel y Fermín, regresan de nuevo a la aventura para afrontar el mayor desafío de sus vidas. Justo cuando todo empezaba a sonreírles, un inquietante personaje visita la librería y amenaza con desvelar un secreto que lleva enterrado dos décadas en la oscura memoria de la ciudad. Al conocer la verdad, Daniel comprenderá que su destino le arrastra a enfrentarse con la mayor de las sombras: la que está creciendo en su interior. </p>
-                            <p class="card-text"> <small> 324 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card El Laberinto de los Espiritus -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/el laberinto de los espiritus.jpg" class="img-fluid rounded-start" alt="Tapa del libro El Laberinto de los Espiritus">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> El Laberinto de los Espiritus </h5>
-                            <p class="card-text"> El misterio de la muerte de su madre ha abierto un abismo en el alma de Daniel. Justo cuando cree que está a un paso de resolver el enigma, una conjura más profunda y oscura de lo que podría haber imaginado despliega su red desde las entrañas del Régimen. Es entonces cuando aparece Alicia Gris, para conducirlos al corazón de las tinieblas y desvelar la historia secreta de la familia... aunque a un terrible precio. </p>
-                            <p class="card-text"> <small> 925 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Banner colección de la Niebla -->
-            <div class="col-md-12 pb-4">
-                <div class="h-100 p-5 bg-light border rounded-3">
-                    <h2> Trilogía de la Niebla </h2>
-                    <p> Nos ofrece una inigualable combinación de aventura, misterio y emociones, de la mano del magistral narrador de La Sombra del Viento, Carlos Ruiz Zafón. </p>
-                </div>
-            </div>
-            
-            <!-- Card El Principe de la Niebla -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/el principe de la niebla.png" class="img-fluid rounded-start" alt="Tapa del libro El Principe de la Niebla">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> El Principe de la Niebla </h5>
-                            <p class="card-text"> El nuevo hogar de los Carver, que se han mudado a la costa huyendo de la ciudad y de la guerra, está rodeado de misterio. Todavía se respira el espíritu de Jacob, el hijo de los antiguos propietarios, que murió ahogado. Las extrañas circunstancias de esa muerte sólo se empiezan a aclarar con la aparición de un diabólico personaje: el Príncipe de la Niebla, capaz de conceder cualquier deseo a una persona; eso sí, a un alto precio. </p>
-                            <p class="card-text"> <small> 223 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Card El Laberinto de los Espiritus -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/el palacio de la medianoche.png" class="img-fluid rounded-start" alt="Tapa del libro El Palacio de la Medianoche">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> El Palacio de la Medianoche </h5>
-                            <p class="card-text"> Calcuta, 1932. Un tren en llamas atraviesa la ciudad. Un espectro de fuego siembra el terror en las sombras de la noche. Pero eso no es más que el principio. En la víspera de cumplir dieciséis años, Ben, Sheere y sus amigos de la Chowbar Society deberán enfrentarse al terrible enigma de la historia de la ciudad. La gente que puebla sus calles sabe que la verdadera historia fue escrita en las páginas invisibles de sus espíritus.  </p>
-                            <p class="card-text"> <small> 352 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Card Las Luces de Septiembre -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/las luces de septiembre.png" class="img-fluid rounded-start" alt="Tapa del libro Las Luces de Septiembre">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> Las Luces de Septiembre </h5>
-                            <p class="card-text"> Un misterioso fabricante de juguetes vive recluido en una mansión gigantesca poblada de seres mecánicos y sombras del pasado. Un enigma en torno a las extrañas luces que brillan entre la niebla que rodea el islote del faro. Una criatura de pesadilla que se oculta en la profundidad del bosque. Estos y otros elementos tejen la trama del misterio que unirá a Irene e Ismael para siempre durante un mágico verano en Bahía Azul. </p>
-                            <p class="card-text"> <small> 227 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Banner colección Fuera de Colección -->
-            <div class="col-md-12 pb-4">
-                <div class="h-100 p-5 bg-light border rounded-3">
-                    <h2> Fuera de Colección </h2>
-                    <p> algo algo algo </p>
-                </div>
-            </div>
-            
-            <!-- Card Marina -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/marina.jpg" class="img-fluid rounded-start" alt="Tapa del libro Marina">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> Marina </h5>
-                            <p class="card-text"> En Barcelona 1980 Óscar Drai sueña despierto, deslumbrado por los palacetes cercanos al internado en el que estudia. En una de sus escapadas conoce a Marina, una chica que comparte con Óscar la aventura de adentrarse en un enigma del pasado. Un misterioso personaje de la posguerra se propuso el mayor desafío, pero su ambición lo arrastró por sendas siniestras cuyas consecuencias debe pagar alguien todavía hoy. </p>
-                            <p class="card-text"> <small> 275 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Card La Ciudad de Vapor -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Imagenes/la ciudad de vapor.jpg" class="img-fluid rounded-start" alt="Tapa del libro La Ciudad de Vapor">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title"> La Ciudad de Vapor </h5>
-                            <p class="card-text"> Un muchacho decide hacerse escritor al descubrir que sus invenciones le regalan un rato más de interés por parte de la niña rica que le ha robado el corazón. Un arquitecto huye de Constantinopla con los planos de una biblioteca inexpugnable. Un extraño caballero tienta a Cervantes para que escriba un libro como no ha existido jamás. Y Gaudí, navegando hacia una misteriosa cita en Nueva York, se deleita con la luz y el vapor. </p>
-                            <p class="card-text"> <small> 224 páginas </small> </p>
-                            <p class="card-text"> <small> Precio: $2500 </small> </p>
-                            <p class="card-text"> <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Añadir al carrito </button> <button class="btn"> <img src="Imagenes/heart.svg" alt=""> </button> </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Off Canvas del carrito -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel"> Carrito de compras </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <!-- La lista de los libros que se van a comprar -->
-                    <div class="list-group w-auto">
-                        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                            <img src="Imagenes/la sombra del viento.jpg" alt="twbs" width="32" height="50">
-                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                <div>
-                                    <h6 class="mb-0"> La Sombra del Viento </h6>
-                                    <p class="mb-0"> <button class="btn"> - </button> 1 <button class="btn"> + </button> </p>
-                                </div>
-                                <small class="text-nowrap"> $2500 </small>
-                                <button class="btn"> <img src="Imagenes/trash.svg" alt="Eliminar artículo"> </button>
-                            </div>
-                        </a>    
-                    </div>
-                    <!-- El boton de finalizar la compra -->
-                    <div>
-                        <a href="datoscomprar.html"> <button class="btn btn-primary w-100 fincompra"> Finalizar compra </button> </a>
-                    </div>
-                </div>
-            </div>
+        <!-- Columna con los libros -->
+        <div class="col-md-8" id="libros">
         </div>
     </div>
 </main>
@@ -372,5 +151,5 @@
     </footer>
 </div> <!-- div del container -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

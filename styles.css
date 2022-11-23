@@ -20,34 +20,12 @@ a {
     --bs-btn-active-border-color: white;
 }
 
-/* PARA PÁGINA DE LOG IN */
-#bodylogin {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.form-signin {
-    max-width: 330px;
-    padding: 15px;
-}
-
-.form-signin .form-floating:focus-within {
-    z-index: 2;
-}
-
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-  
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+/* PARA LA PARTE DEL CARRITO EN INDEX QUE SCROLEE */
+@media screen and (max-width: 768px) {
+    #compras {
+        overflow-y: scroll;
+        max-height: 260px;
+    }
 }
 
 /* PARA BOTON DE FINALIZAR COMPRA EN OFF CANVAS */
